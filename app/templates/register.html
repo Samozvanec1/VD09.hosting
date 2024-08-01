@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Кликер{% endblock %}
+{% block content %}
+<h1>Регистрация</h1>
+<form action="{{url_for('register')}}" method="post">
+   {{ form.hidden_tag() }}
+   {{ form.username.label }} {{ form.username }}
+   {{ form.password.label }} {{ form.password }}
+   {{ form.confirm_password.label }} {{ form.confirm_password }}
+   {{ form.submit }}
+</form>
+{% endblock %}

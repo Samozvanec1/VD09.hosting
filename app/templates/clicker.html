@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Кликер{% endblock %}
+{% block content %}
+<h1>Кликер</h1>
+<h2>{{ current_user.clicks }} 💲</h2>
+<a href = "{{url_for('click')}}"><img src="https://avatars.mds.yandex.net/i?id=308ec8314361c82be71cc319128eb8e4389b96cb-10414034-images-thumbs&n=13"></a>
+{% endblock %}
